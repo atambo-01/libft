@@ -6,7 +6,7 @@
 #    By: atambo <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/19 16:56:50 by atambo            #+#    #+#              #
-#    Updated: 2024/05/21 15:09:00 by atambo           ###   ########.fr        #
+#    Updated: 2024/11/22 20:39:46 by atambo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,6 +51,7 @@ SRCS = ft_atoi.c\
        ft_putendl_fd.c\
        ft_putnbr_fd.c\
        ft_malloc.c \
+       ft_free.c \
 
 
 OBJS = $(SRCS:.c=.o)
