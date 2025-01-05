@@ -6,7 +6,7 @@
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 18:32:42 by atambo            #+#    #+#             */
-/*   Updated: 2024/05/20 10:10:03 by atambo           ###   ########.fr       */
+/*   Updated: 2025/01/05 23:50:08 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strchr(const char *s, int c)
 {
 	if (!s || !*s)
-		return(NULL);
+		return (NULL);
 	while (*s)
 	{
 		if (*s == (char)c)
@@ -23,6 +23,6 @@ char	*ft_strchr(const char *s, int c)
 		s++;
 	}
 	if (c == 0)
-		return((char*)s);
+		return ((char *)s);
 	return (NULL);
 }

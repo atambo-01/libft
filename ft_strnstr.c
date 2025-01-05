@@ -6,7 +6,7 @@
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 17:32:29 by atambo            #+#    #+#             */
-/*   Updated: 2024/05/21 18:05:34 by atambo           ###   ########.fr       */
+/*   Updated: 2025/01/05 23:54:37 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		while (little[i] && (j + i) < len && big[j + i] == little[i])
 		{
 			i++;
-		}	
+		}
 		if (little[i] == '\0')
 			return ((char *)&big[j]);
 		j++;

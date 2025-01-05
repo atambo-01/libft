@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: root </var/mail/root>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:24:41 by atambo            #+#    #+#             */
-/*   Updated: 2024/05/21 18:08:17 by atambo           ###   ########.fr       */
+/*   Created: 2025/01/05 23:50:30 by root              #+#    #+#             */
+/*   Updated: 2025/01/05 23:50:32 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	in_set(char c, char const *set)
 	return (0);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim_free(char *s1, char const *set)
 {
 	size_t	i;
 	size_t	start;
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	while (end > start && in_set(s1[end - 1], set))
 		end --;
-	ts = malloc((end - start + 1) * sizeof(char));
+	ts = (char *)malloc((end - start + 1) * sizeof(char));
 	if (!ts)
 		return (NULL);
 	i = 0;
@@ -48,5 +48,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i ++;
 	}
 	ts[i] = '\0';
+	free(s1);
 	return (ts);
 }
