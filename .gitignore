@@ -5,14 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: atambo <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/20 17:26:46 by atambo            #+#    #+#              #
-#    Updated: 2024/11/20 17:27:35 by atambo           ###   ########.fr        #
+#    Created: 2024/12/12 18:46:12 by atambo            #+#    #+#              #
+#    Updated: 2025/01/07 16:49:07 by atambo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#gitignore for libft
+#default ignore all
+*
 
-#compiled source files
-*.a
-*.o
-*.out
+#whitelist
+!*.c
+!*.h
+!Makefile
