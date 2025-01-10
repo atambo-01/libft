@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/16 18:52:54 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/10 19:19:28 by atambo           ###   ########.fr       */
+/*   Created: 2025/01/09 07:44:12 by atambo            #+#    #+#             */
+/*   Updated: 2025/01/10 19:30:07 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./libft.h"
 
-int	ft_strcmp(const char *s1, const char *s2)
+char	*ft_strcpy(char *src)
 {
-	while (*s1 && *s2)
+	int		i;
+	char	*dest;
+
+	if (!src)
+		return (NULL);
+	i = 0;
+	dest = malloc(sizeof(char) * ft_strlen(src) + 1);
+	while (src[i])
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		dest[i] = src[i];
+		i++;
 	}
-	return (0);
+	dest[i] = 0;
+	return (dest);
 }

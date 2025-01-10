@@ -6,7 +6,7 @@
 #    By: atambo <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/19 16:56:50 by atambo            #+#    #+#              #
-#    Updated: 2024/11/22 20:39:46 by atambo           ###   ########.fr        #
+#    Updated: 2025/01/09 16:46:21 by atambo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRCS =		ft_atoi.c\
 			ft_putstr.c\
 			ft_strchr.c\
 			ft_strcmp.c\
+			ft_strcpy.c\
 			ft_putstr.c\
 			ft_strdup.c\
 			ft_strjoin.c\
@@ -36,6 +37,7 @@ SRCS =		ft_atoi.c\
 			ft_strlcpy.c\
 			ft_strlcat.c\
 			ft_strnstr.c\
+			ft_strcmp.c\
 			ft_strncmp.c\
 			ft_strrchr.c\
 			ft_strtrim.c\
@@ -43,7 +45,6 @@ SRCS =		ft_atoi.c\
 			ft_substr.c\
 			ft_tolower.c\
 			ft_toupper.c\
-			ft_split.c\
 			ft_itoa.c\
 			ft_strmapi.c\
 			ft_striteri.c\
