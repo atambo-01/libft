@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_pp.c                                       :+:      :+:    :+:   */
+/*   ft_putlines.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/18 08:16:36 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/20 20:59:43 by atambo           ###   ########.fr       */
+/*   Created: 2025/01/20 13:55:26 by atambo            #+#    #+#             */
+/*   Updated: 2025/01/20 23:07:10 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./libft.h"
 
-void	ft_free_pp(void ***ptr)
+int	ft_putlines(char **lines)
 {
-	void	**curr;
-	
-	if (!ptr || !*ptr)
-		return ;
-	curr = *ptr;
-	while(*curr)
+	int	i;
+	int	f;
+
+	f = 0;
+	if(!lines || !*lines)
+		return(0);
+	while(lines[f])
+		f++;
+	i = 0;
+	while(i < f && lines[i])
 	{
-		free(*curr);
-		*curr = NULL;
-		curr++;
+		ft_putstr(lines[i]);
+		ft_putstr("\n");
+		i++;
 	}
-	ft_free_p(*ptr);
-	*ptr = NULL;
+	return(i);
 }
