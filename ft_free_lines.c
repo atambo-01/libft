@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_free_lines.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/09 07:44:12 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/18 15:13:43 by atambo           ###   ########.fr       */
+/*   Created: 2025/01/18 17:03:38 by atambo            #+#    #+#             */
+/*   Updated: 2025/01/18 17:04:32 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft.h"
 
-int	ft_strcpy(char *dst, char *src)
+int ft_free_lines(char ***lines)
 {
-	int	i;
+    int count = 0;
 
-	if (!src || !dst)
-		return (0);
-	i = 0;
-	while (src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = 0;
-	return (i);
+    if (lines && *lines)
+    {
+        while ((*lines)[count])
+        {
+            free((*lines)[count]);
+            count++;
+        }
+        free(*lines);
+        *lines = NULL;
+    }
+    return count;
 }

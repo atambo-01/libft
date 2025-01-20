@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_free_pp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/09 07:44:12 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/18 15:13:43 by atambo           ###   ########.fr       */
+/*   Created: 2025/01/18 08:16:36 by atambo            #+#    #+#             */
+/*   Updated: 2025/01/18 08:25:03 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
+#include "libft.h"
 
-int	ft_strcpy(char *dst, char *src)
+void	ft_free_pp(void ***ptr)
 {
-	int	i;
-
-	if (!src || !dst)
-		return (0);
-	i = 0;
-	while (src[i])
+	void	**curr;
+	
+	if (!ptr || !*ptr)
+		return ;
+	curr = *ptr;
+	while(*curr)
 	{
-		dst[i] = src[i];
-		i++;
+		free(*curr);
+		*curr = NULL;
+		curr++;
 	}
-	dst[i] = 0;
-	return (i);
+	ft_free_p(*ptr);
+	*ptr = NULL;
 }
