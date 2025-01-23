@@ -6,7 +6,7 @@
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 17:24:41 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/21 09:05:29 by atambo           ###   ########.fr       */
+/*   Updated: 2025/01/23 18:32:42 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	while (end > start && in_set(s1[end - 1], set))
 		end --;
-	ts = malloc((end - start + 1) * sizeof(char));
+	ts = ft_malloc((end - start + 1) * sizeof(char));
 	if (!ts)
 		return (NULL);
 	i = 0;
