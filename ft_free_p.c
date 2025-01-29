@@ -6,7 +6,7 @@
 /*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 08:16:13 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/18 12:15:24 by atambo           ###   ########.fr       */
+/*   Updated: 2025/01/28 14:20:30 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_free_p(void **ptr)
 {
-	if (ptr && *ptr)
+	if (ptr != NULL && *ptr != NULL)
 	{
 		free(*ptr);
 		*ptr = NULL;
