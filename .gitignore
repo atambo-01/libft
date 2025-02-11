@@ -6,16 +6,65 @@
 #    By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/23 17:55:38 by atambo            #+#    #+#              #
-#    Updated: 2025/01/26 02:06:07 by atambo           ###   ########.fr        #
+#    Updated: 2025/02/11 10:45:28 by atambo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Ignore everything
-/*
+# Compiled object files, shared libraries, and executables
+*.o
+*.so
+*.a
+*.out
+*.exe
 
-# Do not ignore these exceptions
-!./*.c
-!./*.h
-!Makefile
-!.gitignore
+# Debugging and profiling files
+*.dSYM/
+*.gcda
+*.gcno
+*.gcov
+*.prof
+*.profraw
+
+# Dependency files
+*.d
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.pid
+*.lock
+*.cache/
+*.history/
+
+# Generated files and directories
+*.DS_Store
+*.vscode/
+*.idea/
+*.ccls-cache/
+*.clangd/
+*.cmake/
+*.moc/
+
+# Build directories
+build/
+bin/
+obj/
+dist/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Git files
+.git/
+.gitignore
+
+# Personal or environment-specific files
+.env
+*.cfg
+*.conf
+*.ini
 
