@@ -6,7 +6,7 @@
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:54:27 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/20 14:00:11 by atambo           ###   ########.fr       */
+/*   Updated: 2025/02/12 16:16:23 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 int		ft_putlines(char **lines);
+int		ft_perror(char const *msg, int e);
 // Memory
 void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
