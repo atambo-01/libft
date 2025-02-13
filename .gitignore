@@ -5,66 +5,51 @@
 #                                                     +:+ +:+         +:+      #
 #    By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/01/23 17:55:38 by atambo            #+#    #+#              #
-#    Updated: 2025/02/11 10:45:28 by atambo           ###   ########.fr        #
+#    Created: 2025/02/13 20:55:51 by atambo            #+#    #+#              #
+#    Updated: 2025/02/13 20:58:27 by atambo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Compiled object files, shared libraries, and executables
+# Compiled source
+*.a
 *.o
 *.so
-*.a
-*.out
 *.exe
+*.out
+*.dll
 
-# Debugging and profiling files
-*.dSYM/
-*.gcda
-*.gcno
-*.gcov
-*.prof
-*.profraw
-
-# Dependency files
-*.d
-
-# Logs and temporary files
+# Logs and databases
 *.log
-*.tmp
+*.sql
+*.sqlite
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+vendor/
+__pycache__/
+*.egg-info/
+
+# IDE and editor files
+.vscode/
+.idea/
 *.swp
 *.swo
-*.bak
-*.pid
-*.lock
-*.cache/
-*.history/
 
-# Generated files and directories
-*.DS_Store
-*.vscode/
-*.idea/
-*.ccls-cache/
-*.clangd/
-*.cmake/
-*.moc/
+# Build artifacts
+/build/
+/dist/
+/target/
 
-# Build directories
-build/
-bin/
-obj/
-dist/
-CMakeFiles/
-CMakeCache.txt
-Makefile
-cmake_install.cmake
+# C/C++
+*.dSYM/
 
-# Git files
-.git/
-.gitignore
-
-# Personal or environment-specific files
+# Environment files
 .env
-*.cfg
-*.conf
-*.ini
+.env.local
 
+# Temp files
+*.un~
