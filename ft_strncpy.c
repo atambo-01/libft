@@ -1,30 +1,34 @@
-/*                                                                            */
 /* ************************************************************************** */
+/*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/20 10:39:59 by atambo            #+#    #+#             */
-/*   Updated: 2025/02/13 02:41:34 by atambo           ###   ########.fr       */
+/*   Created: 2025/02/12 22:18:01 by atambo            #+#    #+#             */
+/*   Updated: 2025/02/12 22:23:46 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+char	*ft_strncpy(char *dst, const char *src, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	if (size > 0)
+	if (n > 0)
 	{
-		while (i < size - 1 && src[i])
+		while (i < n - 1 && src[i])
 		{
 			dst[i] = src[i];
 			i++;
 		}
-		dst[i] = 0;
+		while(i < n)
+		{
+			dst[i] = 0;
+			i++;
+		}
 	}
-	return (ft_strlen(src));
+	return (dst);
 }
