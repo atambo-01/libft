@@ -6,7 +6,7 @@
 #    By: atambo <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/19 16:56:50 by atambo            #+#    #+#              #
-#    Updated: 2025/02/12 22:29:26 by atambo           ###   ########.fr        #
+#    Updated: 2025/02/28 17:40:42 by atambo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,8 +58,8 @@ SRCS =		ft_atoi.c\
 			ft_free_pp.c\
 			ft_split.c\
 			ft_perror.c\
-			ft_strncpy.c
-			
+			ft_strncpy.c\
+			ft_abs.c\
 
 OBJS = $(SRCS:.c=.o)
 
