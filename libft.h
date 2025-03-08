@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: atambo <atambo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:54:27 by atambo            #+#    #+#             */
-/*   Updated: 2025/02/28 17:42:04 by atambo           ###   ########.fr       */
+/*   Updated: 2025/03/08 15:38:40 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_malloc(size_t size);
 void	ft_free_p(void **ptr);
 void	ft_free_pp(void ***ptr);
-
+void *ft_realloc(void **ptr, size_t old_size, size_t new_size);
 int		ft_abs(int num);
 
 #endif
