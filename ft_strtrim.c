@@ -6,7 +6,7 @@
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 17:24:41 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/24 15:05:15 by atambo           ###   ########.fr       */
+/*   Updated: 2025/03/10 12:04:21 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (s1[start] && in_set(s1[start], set))
 		start ++;
 	if (s1[start] == 0)
-		return(NULL);
+		return (NULL);
 	end = ft_strlen(s1);
 	while (end > start && in_set(s1[end - 1], set))
 		end --;

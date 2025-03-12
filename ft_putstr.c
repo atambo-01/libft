@@ -6,7 +6,7 @@
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 17:09:18 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/20 23:40:05 by atambo           ###   ########.fr       */
+/*   Updated: 2025/03/10 12:00:36 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putstr(char const *str)
 {
 	if (!str)
-		return;
+		return ;
 	while (*str)
 		write (1, str++, 1);
 }

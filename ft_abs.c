@@ -6,7 +6,7 @@
 /*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 17:37:37 by atambo            #+#    #+#             */
-/*   Updated: 2025/02/28 17:45:37 by atambo           ###   ########.fr       */
+/*   Updated: 2025/03/10 12:03:24 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_abs(int num)
 {
 	if (num < 0)
-		return(-num);
-	return(num);
+		return (-num);
+	return (num);
 }

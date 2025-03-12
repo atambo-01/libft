@@ -5,26 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/18 17:03:38 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/18 17:04:32 by atambo           ###   ########.fr       */
+/*   Created: 2025/03/10 11:57:18 by atambo            #+#    #+#             */
+/*   Updated: 2025/03/10 11:57:53 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft.h"
 
-int ft_free_lines(char ***lines)
+int	ft_free_lines(char ***lines)
 {
-    int count = 0;
+	int	count;
 
-    if (lines && *lines)
-    {
-        while ((*lines)[count])
-        {
-            free((*lines)[count]);
-            count++;
-        }
-        free(*lines);
-        *lines = NULL;
-    }
-    return count;
+	count = 0;
+	if (lines && *lines)
+	{
+		while ((*lines)[count])
+		{
+			free((*lines)[count]);
+			count++;
+		}
+		free(*lines);
+		*lines = NULL;
+	}
+	return (count);
 }

@@ -6,7 +6,7 @@
 /*   By: atambo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 10:55:51 by atambo            #+#    #+#             */
-/*   Updated: 2025/01/29 07:22:20 by atambo           ###   ########.fr       */
+/*   Updated: 2025/03/10 12:08:19 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ char	*ft_strdup(char *src)
 {
 	size_t	n;
 	char	*dst;
-	
+
 	if (!src)
-		return(NULL);
+		return (NULL);
 	n = 0;
 	while (src[n])
 		n ++;

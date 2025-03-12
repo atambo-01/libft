@@ -6,7 +6,7 @@
 /*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 22:18:01 by atambo            #+#    #+#             */
-/*   Updated: 2025/02/12 22:23:46 by atambo           ###   ########.fr       */
+/*   Updated: 2025/03/10 12:07:08 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 			dst[i] = src[i];
 			i++;
 		}
-		while(i < n)
+		while (i < n)
 		{
 			dst[i] = 0;
 			i++;

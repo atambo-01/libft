@@ -6,7 +6,7 @@
 /*   By: atambo <alex.tambo.15432@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 01:32:13 by atambo            #+#    #+#             */
-/*   Updated: 2025/02/11 10:52:02 by atambo           ###   ########.fr       */
+/*   Updated: 2025/03/10 12:04:37 by atambo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ int	ft_perror(char const *msg, int e)
 	if (!msg)
 		return (1);
 	if (write(2, msg, ft_strlen(msg)) == -1)
-		return(-1);
-	return(e);
+		return (-1);
+	return (e);
 }
